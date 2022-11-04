@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-header">
+    Editando libro
+    <span class="badge bg-secondary">Id: <%= @book.id %></span>
+  </div>
+  <div class="card-body">
+    <%= render 'form', book: @book %>
+  </div>
+  <div class="card-footer">
+    <%= link_to 'Mostrar', @book %> |
+    <%= link_to 'Regresar', books_path %>
+  </div>
+</div>
